@@ -1,0 +1,10 @@
+main {
+  width: 80%;
+  margin: auto;
+  h3 {
+    color: darken($colorDefault1, 30%);
+  }
+  p  {
+    white-space: pre-line;
+  }
+}

@@ -1,0 +1,48 @@
+.ville, .services{
+  width: 80%;
+  margin: auto;
+
+  .leftToRight, .rightToLeft {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  .leftToRight{
+    .imgContain{
+      order: 2;
+    }
+    .text{
+      order: 1;
+    }
+  }
+
+  .rightToLeft{
+    .imgContain{
+      order: 1;
+    }
+    .text{
+      order: 2;
+    }
+  }
+
+  .imgContain{
+    width: 50%;
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .text{
+    width: 50%;
+    white-space: pre-line;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  p{
+    white-space: pre-line;
+
+  }
+}

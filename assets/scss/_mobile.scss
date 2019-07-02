@@ -1,0 +1,136 @@
+@media all and (max-width: 1147px) {
+  #largeMenu {
+    a {
+      padding: 13px 22px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .swiper-slide {
+    height: 55% !important;
+
+  }
+  .swiper-container {
+    min-height: 400px;
+
+    .swiper-button-next, .swiper-button-prev {
+      width: 45px;
+
+    }
+  }
+  .ville, .services {
+    .leftToRight, .rightToLeft {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .imgContain {
+        width: 100%;
+        order: 1 !important;
+      }
+
+      .text {
+        width: 100%;
+        order: 2 !important;
+      }
+    }
+  }
+
+  #loginContainer {
+    min-width: 90%;
+
+    div {
+      min-width: 70%;
+    }
+  }
+
+  .billTable {
+    min-width: 100%;
+    .rowTitle, .rowContainer{
+      justify-content: center !important;
+    }
+    .title{
+      min-width: 30%;
+    }
+    span {
+      min-width: 30%;
+    }
+    .useless {
+      display: none;
+    }
+    button, a{
+      min-width: 27%;
+    }
+  }
+
+}
+
+@media all and (max-width: 560px) {
+  //html {
+  //  font-size: 9px !important;
+  //}
+
+  .swiper-slide {
+    height: 55% !important;
+
+    img {
+      width: 70% !important;
+    }
+
+    .swiper-subject {
+      h2 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+  #loginContainer {
+    div {
+      min-width: 80%;
+    }
+  }
+  #sectionForm {
+    article {
+      textarea {
+        width: 300px;
+
+
+      }
+    }
+  }
+
+  .background {
+    .modal {
+      min-width: 80%;
+    }
+
+    .confirme {
+      @include column;
+      span{
+        order: 2;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 400px) {
+  //html {
+  //  font-size: 6px !important;
+  //}
+
+  .swiper-container {
+    .swiper-button-next, .swiper-button-prev {
+      width: 35px;
+    }
+
+  }
+
+  #sectionForm article {
+    width: 90% !important;
+  }
+
+}

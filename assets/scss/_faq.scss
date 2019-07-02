@@ -1,0 +1,28 @@
+.accordion {
+  background-color: $borderColor;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: unset;
+  outline: none;
+  transition: 0.4s;
+  p{
+    margin: 0;
+  }
+}
+
+
+.active, .accordion:hover {
+  background-color: $colorDefault1;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

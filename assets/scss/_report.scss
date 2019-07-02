@@ -1,0 +1,33 @@
+#sectionForm {
+  width: 90%;
+  margin: 20px auto;
+
+  article {
+    width: 75%;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid $colorDefault1;
+    box-shadow: $shadow;
+    form{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    select, input {
+      padding: 10px;
+      margin: 20px 0;
+      border: 1px solid $borderColor;
+    }
+    label {
+      margin: 10px 0;
+    }
+    textarea{
+      width: 80%;
+      height: 85px;
+    }
+  }
+}

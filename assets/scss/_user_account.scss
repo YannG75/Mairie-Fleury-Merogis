@@ -1,0 +1,106 @@
+#hidden{
+  width: unset;
+  margin: unset;
+  h3{
+    color: unset;
+  }
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+
+  .modal {
+    border: $colorDefault1 1px solid;
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 2px 6px $titleColor;
+    @include column;
+    align-items: center;
+    background: white;
+    span {
+      color: #b4b4b4;
+    }
+    .content {
+      @include spacedRow;
+      width: 100%;
+      margin: auto;
+      font-size: x-large;
+      .fields{
+        @include column;
+        span{
+          word-break: break-word;
+          margin-bottom: 10px;
+        }
+      }
+
+    }
+
+    .confirme {
+      @include spacedRow;
+      width: 100%;
+      span {
+        text-decoration: underline;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+
+  }
+}
+.personalInfo {
+  background: rgba(215, 44, 44, 0.8);
+  position: sticky;
+  top: 80px;
+  min-height: 40px;
+  @include centerRow;
+  h3 {
+    margin: 0;
+  }
+}
+
+.billTable{
+  width: 80%;
+  margin: auto;
+  @include column;
+  h3{
+    text-align: center;
+  }
+  .rowTitle{
+    @include spacedRow;
+    width: 100%;
+    .title{
+      border: 1px solid $colorDefault1;
+      width: 20%;
+      text-align: center;
+      margin-bottom: 10px;
+      h4{
+        margin: 0;
+      }
+    }
+  }
+.rowContainer{
+  width: 100%;
+  @include spacedRow;
+  margin-bottom: 20px;
+  span, a{
+    width: 20%;
+    text-align: center;
+    color: black;
+  }
+
+
+
+
+  button{
+    width: 20%;
+  }
+
+}
+}

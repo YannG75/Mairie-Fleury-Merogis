@@ -377,7 +377,8 @@ button {
   border: 1.5px solid #ef981a;
   box-shadow: 1px 2px 6px #6f6f6f;
   color: #76a723;
-  font-size: large; }
+  font-size: large;
+  cursor: pointer; }
 
 .back {
   margin: 5px 10px; }

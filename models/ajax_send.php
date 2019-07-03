@@ -31,8 +31,8 @@ if ((isset($motif) AND $motif == '') || (isset($option) AND $option == '') || (i
             $email,
         ));
 
-    /*$
-    to = 'mairie@admin.com';
+    /*
+     * $to = 'mairie@admin.com';
     $subject = 'Signalement de problème';
     $message = 'Motif :' . $motif . ' /r Option :' . $option . '/r' . $precision . '/r From :' . $email;
     $message = wordwrap($message, 70, "\r\n");

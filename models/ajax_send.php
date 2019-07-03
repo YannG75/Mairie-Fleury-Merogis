@@ -20,11 +20,8 @@ if ((isset($motif) AND $motif == '') || (isset($option) AND $option == '') || (i
     $res->type = 0;
     $res->msg = "L'envoi n'a pas été effectué veuillez rempir tous les champs !";
     echo json_encode($res);
-} elseif (!ctype_digit($motif) || !ctype_digit($option) || !filter_input(INPUT_POST, $email, FILTER_VALIDATE_EMAIL)) {
-    $res->type = 0;
-    $res->msg = "L'envoi n'a pas été effectué veuillez rempir tous les champs correctement !";
-    echo json_encode($res);
-} else {
+}
+ else {
     $query_user = $db->prepare('INSERT INTO report (motif, motif_option, report_precision, email) VALUES (?, ?, ?, ?)');
     $query_user->execute(
         array(
@@ -34,11 +31,13 @@ if ((isset($motif) AND $motif == '') || (isset($option) AND $option == '') || (i
             $email,
         ));
 
-    $to = 'mairie@admin.com';
+    /*$
+    to = 'mairie@admin.com';
     $subject = 'Signalement de problème';
     $message = 'Motif :' . $motif . ' /r Option :' . $option . '/r' . $precision . '/r From :' . $email;
     $message = wordwrap($message, 70, "\r\n");
     mail($to, $subject, $message);
+    */
 
     $res->type = 1;
     $res->msg = "L'envoi à été effectué avec succès ";

@@ -21,7 +21,15 @@ $shadow : 1px 2px 6px #6f6f6f;
   justify-content: space-around;
   align-items: center;
 }
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../assets/polices/Montserrat/Montserrat-Medium.ttf");
+
+  font-family: "Montserrat Black";
+  src: url("../assets/polices/Montserrat/Montserrat-Black.ttf");
+}
 *{
+
   font-family: "Montserrat Medium";
   box-sizing: border-box;
   scroll-behavior: smooth;
